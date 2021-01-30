@@ -16,9 +16,9 @@ def skip_fun():
 
 
 title = input("title : ").rstrip()
-# url = input("url : ").rstrip()
+url = input("url : ").rstrip()
 browser = webdriver.Chrome(ChromeDriverManager().install())
-browser.get("https://www.youtube.com/watch?v=RZSuRFNeZGI") # url 여기에 넣자.
+browser.get(url) 
 
 video = browser.find_element_by_id("player-container")
 video.click()
